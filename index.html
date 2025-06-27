@@ -10,13 +10,14 @@
       background: #1e1e2f;
       color: #f0f0f5;
       margin: 0;
-      padding: 0;
+      padding: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
       text-align: center;
+    }
+    header {
+      max-width: 800px;
     }
     h1 {
       font-size: 3rem;
@@ -44,20 +45,45 @@
     #startBtn:hover {
       transform: scale(1.05);
     }
+    section.about-dev {
+      margin-top: 2rem;
+      border-top: 1px solid #444;
+      padding-top: 1.5rem;
+      max-width: 700px;
+    }
+    section.about-dev h2 {
+      font-size: 2rem;
+      color: #ffcc00;
+      margin-bottom: 0.5rem;
+    }
+    section.about-dev p {
+      font-size: 1rem;
+      color: #ddd;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
-  <h1>Grail Knight</h1>
-  <p>
-    Welcome to <strong>Grail Knight</strong>, an epic adventure game where you take on the role of a brave knight on a quest to save your kingdom.
-    Explore vast dungeons, battle fearsome monsters, and uncover hidden treasures.
-    Every step brings you closer to defeating the dark demon lord who threatens your world.
-  </p>
-  <p>
-    Use the arrow keys or on-screen controls to move, and press the attack button to swing your sword.
-    You'll need wit and courage to overcome traps, solve puzzles, and upgrade your gear along the way.
-  </p>
-  <button id="startBtn">Start Your Adventure</button>
+  <header>
+    <h1>Grail Knight</h1>
+    <p>
+      Welcome to <strong>Grail Knight</strong>, an epic adventure game where you take on the role of a brave knight on a quest to save your kingdom.
+      Explore vast dungeons, battle fearsome monsters, and uncover hidden treasures. Every step brings you closer to defeating the dark demon lord who threatens your world.
+    </p>
+    <p>
+      Use the arrow keys or on-screen controls to move, and press the attack button to swing your sword.
+      You'll need wit and courage to overcome traps, solve puzzles, and upgrade your gear along the way.
+    </p>
+    <button id="startBtn">Start Your Adventure</button>
+  </header>
+
+  <section class="about-dev">
+    <h2>About the Developer</h2>
+    <p>
+      Hi there! I'm **Rahmat**, a passionate indie game and web developer. I love creating immersive experiences using Godot and crafting responsive web apps in my free time. <br>
+      'Grail Knight' is my latest project, blending my love for classic RPG adventures with modern design. I'm always learning new tools and techniques to make better games and grow as a developer.
+    </p>
+  </section>
 
   <script>
     // Simple JavaScript for the page
