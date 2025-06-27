@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grail Knight Adventure</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #1e1e2f;
+      color: #f0f0f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: #ffcc00;
+      text-shadow: 1px 1px 2px #000;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      max-width: 600px;
+      margin: 0.5rem 0;
+    }
+    #startBtn {
+      background: #ffcc00;
+      border: none;
+      color: #1e1e2f;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 1.5rem;
+      transition: transform 0.2s;
+    }
+    #startBtn:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Grail Knight</h1>
+  <p>
+    Welcome to <strong>Grail Knight</strong>, an epic adventure game where you take on the role of a brave knight on a quest to save your kingdom.
+    Explore vast dungeons, battle fearsome monsters, and uncover hidden treasures.
+    Every step brings you closer to defeating the dark demon lord who threatens your world.
+  </p>
+  <p>
+    Use the arrow keys or on-screen controls to move, and press the attack button to swing your sword.
+    You'll need wit and courage to overcome traps, solve puzzles, and upgrade your gear along the way.
+  </p>
+  <button id="startBtn">Start Your Adventure</button>
+
+  <script>
+    // Simple JavaScript for the page
+    document.getElementById('startBtn').addEventListener('click', function() {
+      // Here you could redirect to your game page or launch the game
+      alert('Get ready to become the Grail Knight!');
+    });
+
+    // Example: log a welcome message in the console
+    console.log('Welcome to Grail Knight – your adventure begins now!');
+  </script>
+</body>
+</html>
